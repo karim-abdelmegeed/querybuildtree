@@ -33,7 +33,6 @@ class QueryBuilderTree
                     $logic[$i]->sub_operation == "and" ?
                         array_push($output['$' . $current_root],['\$and'=>$temp]) :
                         array_push($output['$' . $current_root],['\$or'=>$temp]);
-                    dd($output);
                     $leftNode = true;
                     $rightNode = true;
                 } else {
